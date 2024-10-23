@@ -49,11 +49,11 @@ const exercise3 = array3 =>{
 const exercise4 = array4 => {     
 
 
-      const aleatory4 = Math.floor(Math.random()* 101);
-      const aleatory5 = Math.floor(Math.random()*101);
-      const aleatory6 = Math.floor(Math.random()*101)
-        array4.unshift(aleatory4, aleatory5, aleatory6)
-          console.log(array4);
+const aleatory4 = Math.floor(Math.random()* 101);
+const aleatory5 = Math.floor(Math.random()*101);
+const aleatory6 = Math.floor(Math.random()*101)
+array4.unshift(aleatory4, aleatory5, aleatory6)
+console.log(array4);
 
 }
 
@@ -61,15 +61,15 @@ exercise4([])
 
 // Crea una función llamada dniLetter que recibirá un número de DNI sin la letra. Dentro de esa función pon este array ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'] La letra del DNI se calcula a través del resto de dividir el número de DNI entre 23, ese número te dará la posición del array donde se encuentra la letra correspondiente a ese DNI. Imprime por consola el DNI con su letra correspondiente.
           
-          const array5 = dniNumber =>{
-          const lettersDni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E']
+const array5 = dniNumber =>{
+const lettersDni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E']
 
-          const letterDni = lettersDni[dniNumber % 23];
-            console.log (`El dni ${dniNumber} tiene la letra: ${letterDni}`)
-          }
+const letterDni = lettersDni[dniNumber % 23];
+console.log (`El dni ${dniNumber} tiene la letra: ${letterDni}`)
+}
         
-          const dniNoLetter = 11859890;
-          array5(dniNoLetter);
+const dniNoLetter = 11859890;
+array5(dniNoLetter);
           
 // Crea una función que reciba un array con 3 palabras, debes imprimir por consola un array que contenga la inicial y la última letra de cada palabra en mayúsculas, es decir, si nuestra función recibiera un array con ['hola', 'adios', 'gato'] deberá imprimir por consola ['H', 'A', 'A', 'S', 'G', 'O']
 
@@ -87,32 +87,32 @@ array6(['nokia', 'leon','narciso']);
 
 // Crea una función que reciba un array con 3 números y te diga cuántos números pares tiene ese array.
 
-              const array7 = threeNumbers =>{
-                return `Este array tiene ${(threeNumbers[0] % 2 === 0 ? 1 : 0) +
-                                          (threeNumbers[1] % 2 === 0 ? 1 : 0) +
-                                         (threeNumbers[2] % 2 === 0 ? 1 : 0)} números pares`;
-              }
+const array7 = threeNumbers =>{
+return `Este array tiene ${(threeNumbers[0] % 2 === 0 ? 1 : 0) +
+(threeNumbers[1] % 2 === 0 ? 1 : 0) +
+(threeNumbers[2] % 2 === 0 ? 1 : 0)} números pares`;
+  }
               
-              console.log(array7([1,1,4]))
+console.log(array7([1,1,4]))
 
  // Crea una función que reciba un array con 3 números y devuelva un nuevo array con los mismos números pero en orden inverso.
 
-            const array8 = (threeNumbers) => {
-              const arrayInvert = [threeNumbers[2], threeNumbers[1], threeNumbers[0]]; 
-              console.log(arrayInvert);
-            }
+const array8 = (threeNumbers) => {
+const arrayInvert = [threeNumbers[2], threeNumbers[1], threeNumbers[0]]; 
+console.log(arrayInvert);
+}
             
-            array8([1, 2, 3]); 
+array8([1, 2, 3]); 
 
  // Crea una función que reciba un array con 3 palabras y devuelva un nuevo array con las mismas palabras pero en mayúsculas.
 
             
-            const array9 = (threeWords) => {
-              const array = [threeWords[0].toUpperCase(), threeWords[1].toUpperCase(), threeWords[2].toUpperCase()];
-                console.log(array);
-            }
+ const array9 = (threeWords) => {
+  const array = [threeWords[0].toUpperCase(), threeWords[1].toUpperCase(), threeWords[2].toUpperCase()];
+  console.log(array);
+  }
             
-            array9(["hola", "mundo", "javascript"]);              
+ array9(["hola", "mundo", "javascript"]);              
               
 
             
