@@ -73,7 +73,7 @@ exercise4([])
           
 // Crea una función que reciba un array con 3 palabras, debes imprimir por consola un array que contenga la inicial y la última letra de cada palabra en mayúsculas, es decir, si nuestra función recibiera un array con ['hola', 'adios', 'gato'] deberá imprimir por consola ['H', 'A', 'A', 'S', 'G', 'O']
 
-const transformArray = (array) => {
+const array6 = (array) => {
   const upper = [
     array[0].charAt(0).toUpperCase() + array[0].charAt(array[0].length - 1).toUpperCase(),
     array[1].charAt(0).toUpperCase() + array[1].charAt(array[1].length - 1).toUpperCase(),
@@ -83,7 +83,7 @@ const transformArray = (array) => {
   console.log(upper);
 }
 
-transformArray(['nokia', 'leon','narciso']); 
+array6(['nokia', 'leon','narciso']); 
 
 // Crea una función que reciba un array con 3 números y te diga cuántos números pares tiene ese array.
 
